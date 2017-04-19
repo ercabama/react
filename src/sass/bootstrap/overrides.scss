@@ -1,0 +1,30 @@
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+
+$btn-primary-color: #fff;
+$btn-primary-bg: #0290ce;
+$btn-primary-border: #269abc;
+
+$btn-warning-color: #0290ce;
+$btn-warning-bg: #fff;
+$btn-warning-border: #0290ce;
+
+$btn-default-color: #fff;
+$btn-default-bg: #013d7c;
+$btn-default-border: #013d7c;
+
+// redefined input-sm & all *-sm suffix
+$input-height-small: 22px;
+$padding-small-vertical: 1px;
+$padding-small-horizontal: 6px;
+$font-size-small: 14px;
+
+// nav
+$nav-tabs-border-color: none;
+
+$navbar-height: 27px;
+$navbar-default-bg: #e6e6e6;
+
+//=== Shared nav styles
+$nav-link-padding: 3px 15px;
+$nav-link-hover-bg: #d2d2d2;
+// end nav

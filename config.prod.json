@@ -1,0 +1,13 @@
+{
+  "crypto": {
+    "key": "3RcdVmnROKQFlPnKs7yW8XhpJGA25kLx",
+    "iv": "O1fX3kam6h7AaGE5",
+    "encoding": "base64"
+  },
+  "mode": "production",
+  "server": {
+    "port": 4667,
+    "static": ".",
+    "morgan": "combined"
+  }
+}

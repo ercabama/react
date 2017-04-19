@@ -1,0 +1,27 @@
+{
+  "crypto": {
+    "key": "3RcdVmnROKQFlPnKs7yW8XhpJGA25kLx",
+    "iv": "O1fX3kam6h7AaGE5",
+    "encoding": "base64"
+  },
+  "auth": {
+    "sessionSecret": "4lbmfqaz178jnEMB1wt5MsBzAwn8QibVS7rqvghk8pfR7w1ou",
+    "loginPage": "signIn"
+  },
+  "mode": "development",
+  "cache": false,
+  "ORACLEDB_USER_IPN": "ipn",
+  "ORACLEDB_USER_IPNCALC": "ipnCALC",
+  "ORACLEDB_PASSWORD": "5573gaby",
+  "ORACLEDB_DSN": "172.26.67.82/ipcnac",
+  "MYSQLDB_USER": "Gabito",
+  "MYSQLDB_PASSWORD":"gabitoSensei",
+  "MYSQLDB_DNS":"127.0.0.1",
+  "MYSQLDB_DBNAME": "gabitoSlave",
+  "MYSQLDB_UTF": "utf-8",
+  "server": {
+    "port": 8686,
+    "static": "public",
+    "morgan": "dev"
+  }
+}

@@ -1,0 +1,20 @@
+.bean {
+  max-width: 120px;
+  margin: 11px 20px 0 5px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  .col-sm-7 {
+    padding: 5px;
+    color: #fff;
+    background-color: $indec-society;
+    border: 1px solid $indec-society;
+    border-radius: 7px 0 0 7px;
+  }
+  .col-sm-5 {
+    padding: 5px;
+    color: $indec-society;
+    background-color: #fff;
+    border: 1px solid $indec-society;
+    border-radius: 0 7px 7px 0;
+  }
+}

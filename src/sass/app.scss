@@ -1,0 +1,378 @@
+@import "common";
+@import "bean";
+@import "chat";
+@import "rating";
+@import "side-bar";
+
+html, body {
+  overflow-y: auto;
+}
+
+body {
+  background-color: #EBEBEB
+}
+header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.main {
+  padding-top: 128px;
+  margin-bottom: 80px;
+}
+
+// footer
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  min-height: 50px;
+  margin: 100px 0 0;
+  background-color: #f8f8f8;
+  border-top: 1px solid $indec-society;
+  .texts {
+    margin-top: 11px;
+    color: $indec-society;
+  }
+}
+
+.semaphore {
+  max-width: 110px;
+  min-height: 22px;
+  padding: 6px 8px 4px;
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 11px;
+}
+
+.data-footer {
+  padding-top: 15px;
+  color: $indec-society;
+}
+
+// end footer
+
+.login {
+  margin-top: 40px;
+}
+
+.form-signin {
+  max-width: 300px;
+  padding: 15px 20px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 25px 0;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .05);
+  input {
+    height: auto;
+    padding: 5px 9px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .btn-primary {
+    padding: 5px 30px;
+  }
+}
+
+.margin-top-comments {
+  margin-top: 7px;
+}
+
+select.max {
+  max-width: 300px;
+  padding: 6px 2px;
+}
+
+.remove-destination {
+  .fa-trash {
+    color: $index-red;
+  }
+}
+
+.flight-number {
+  max-width: 150px;
+}
+
+hr {
+  margin: 5px 0;
+}
+
+// menu
+.row-logo {
+  padding: 10px 5px;
+  background-color: #f8f8f8;
+}
+
+a {
+  color: $indec-society;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.nav-tabs > li > a {
+  border-radius: 0;
+}
+
+// fin menu
+
+// btn
+
+.survey-selector .btn {
+  padding: 6px 14px;
+
+}
+
+.language-selected{
+  color: white;
+  background-color: #013d7c;
+}
+
+.btn-warning {
+  padding: 5px 9px;
+  font-size: 18px;
+  border: 2px solid $indec-cyan;
+  border-radius: 30px;
+  &:hover {
+    color: #fff;
+    background-color: $indec-cyan;
+    border-color: $indec-cyan;
+  }
+}
+
+.btn-info {
+  color: #999;
+  background-color: #f0f0f0;
+  border-color: #cfcfcf;
+}
+
+// end btn
+
+// index survey
+.stage-selector {
+  margin-top: 30px;
+}
+
+.btn-survey-a {
+  width: 86px;
+  height: 86px;
+  padding: 8px 0;
+  margin-top: 0;
+  font-size: 50px;
+  border: 1px solid transparent;
+}
+
+.btn-survey-a-text {
+  width: 212px;
+  height: 86px;
+  padding: 20px 0;
+  margin-top: 0;
+  font-size: 30px;
+  color: #fff;
+  border: 1px solid transparent;
+  &.eze {
+    height: 43px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #004e76;
+  }
+}
+
+.btn-eze {
+  @include button-variant(#fff, #004e76, #ececec);
+}
+
+.btn-aep {
+  @include button-variant(#fff, #116aa9, #ececec);
+}
+
+.btn-pto {
+  @include button-variant(#fff, #0087bd, #ececec);
+}
+
+.btn-cor {
+  @include button-variant(#fff, #2daccb, #ececec);
+}
+
+.btn-form {
+  @include button-variant($indec-society, #ccc, #fff);
+}
+
+.stage {
+  padding-right: 0;
+  padding-left: 0;
+  button {
+    display: inline-block;
+    width: 69px;
+    height: 39px;
+    padding: 5px 0;
+    margin: 4px 0 0;
+    font-size: 20px;
+  }
+}
+
+// end index survey
+
+// fonts
+.module-title, .survey-title {
+  margin-bottom: 30px;
+  color: $indec-society;
+}
+
+.version {
+  margin-top: -3px;
+  font-size: 10px;
+}
+
+// end fonts
+
+// boxes
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.panel-body {
+  background-color: #fdfcfc;
+  [class*="col-xs"] {
+    padding-right: 1px;
+    padding-left: 1px;
+  }
+}
+
+.panel-primary {
+  border-color: #ddd;
+  > .panel-heading {
+    color: #fff;
+    background-color: $indec-society;
+    border-color: #ddd;
+  }
+}
+
+// end boxes
+
+.panel-default {
+  border-color: #ddd;
+  > .panel-heading {
+    color: #333;
+    background-color: #f0f0f0;
+    border-color: #ddd;
+  }
+}
+
+// status pie & glyphicon
+.sidebar-success {
+  padding: 0 5px 5px;
+  color: #454545;
+}
+
+.sidebar-incomplete {
+  padding: 0 5px 5px;
+  color: #454545;
+}
+
+.fa-check-circle, .fa-ok {
+  color: $indec-green;
+}
+
+.fa-chevron-down, .fa-chevron-right {
+  color: $indec-society;
+}
+
+.fa-exclamation-circle, .fa-times {
+  color: $index-red;
+}
+
+// END status pie
+
+label {
+  display: inline;
+  font-weight: normal;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row-divider:not(:last-child) {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+// Solution scroll horizontal
+@media (min-width: 768px) {
+  .container {
+    width: inherit;
+  }
+
+  .navbar-right {
+    margin: 0 0 0 25px;
+  }
+}
+
+.fadein, .fadeout {
+  transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.5s;
+}
+
+.fadein.ng-hide-remove,
+.fadeout.ng-hide-add.ng-hide-add-active {
+  display: block !important;
+  opacity: 0;
+}
+
+.fadeout.ng-hide-add,
+.fadein.ng-hide-remove.ng-hide-remove-active {
+  display: block !important;
+  opacity: 1;
+}
+
+.fa-thumbs-up {
+  font-size: 60px;
+  color: $indec-cyan;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.rating-question label {
+  padding: 6px 20px;
+}
+
+.alert.alert-warning {
+  padding: 5px;
+  margin-bottom: 0;
+  border-radius: 0;
+  &.input-top {
+    margin-top: 5px;
+  }
+}
+
+.unread {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 12px;
+  color: #fff;
+  text-align: center;
+  background-color: $index-red;
+  border-radius: 30px;
+}
